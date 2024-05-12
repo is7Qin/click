@@ -12,7 +12,7 @@
     $ip_list = array();
     // 逐行读取文件内容
     while (($line = fgets($file)) !== false) {
-            $parts = explode(":", $line);
+            $parts = explode(":", trim($line));
 
         // 输出处理后的结果
             $ip_list[] = $parts;
